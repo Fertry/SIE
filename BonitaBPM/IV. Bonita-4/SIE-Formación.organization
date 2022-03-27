@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="SIE-Formación" description="Práctica 03 Marzo 2022&#xD;&#xA;">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="alejandro">
+      <firstName>Alejandro</firstName>
+      <lastName>Fernández</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="elena">
+      <firstName>Elena</firstName>
+      <lastName>Ayora</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="francisco">
+      <firstName>Francisco</firstName>
+      <lastName>de la Torre</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="isabel">
+      <firstName>Isabel</firstName>
+      <lastName>Granada</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Administrador">
+      <displayName></displayName>
+      <description>Administrador</description>
+    </role>
+    <role name="Empleado">
+      <displayName></displayName>
+      <description>Usuario</description>
+    </role>
+    <role name="Estudiante">
+      <displayName></displayName>
+      <description>Estudiante</description>
+    </role>
+  </roles>
+  <groups>
+    <group name="Empleados">
+      <displayName></displayName>
+    </group>
+    <group name="Estudiantes">
+      <displayName></displayName>
+    </group>
+    <group name="Profesores" parentPath="/Empleados">
+      <displayName></displayName>
+    </group>
+    <group name="Otro personal" parentPath="/Empleados">
+      <displayName></displayName>
+    </group>
+    <group name="Administradores">
+      <displayName></displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>alejandro</userName>
+      <roleName>Administrador</roleName>
+      <groupName>Administradores</groupName>
+    </membership>
+    <membership>
+      <userName>elena</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Profesores</groupName>
+      <groupParentPath>/Empleados</groupParentPath>
+    </membership>
+    <membership>
+      <userName>francisco</userName>
+      <roleName>Empleado</roleName>
+      <groupName>Otro personal</groupName>
+      <groupParentPath>/Empleados</groupParentPath>
+    </membership>
+    <membership>
+      <userName>isabel</userName>
+      <roleName>Estudiante</roleName>
+      <groupName>Estudiantes</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
