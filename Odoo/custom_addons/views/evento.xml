@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <menuitem id="menu-eventos" name="Evento"/>
+        <menuitem id="registro-eventos" parent="menu-eventos" name="Eventos" action="accion-evento" sequence="5"/>
+        
+    </data>
+</odoo>
