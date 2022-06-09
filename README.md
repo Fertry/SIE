@@ -5,3 +5,4 @@ Miembros:
 
 - Elena Ayora García
 - Alejandro Fernández Trigo
+- Jose Luís Mora Jimenez
